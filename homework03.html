@@ -1,0 +1,76 @@
+
+<!-- saved from url=(0061)https://cs.harding.edu/gfoust/classes/comp431/homework03.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./homework03_files/standard.css" type="text/css">
+    <title>Comp 431: Homework</title>
+    <!--<base target="_top">--><base href="." target="_top">
+    <style>
+    </style>
+  <style></style></head>
+  <body>
+    <p>
+      Create a complete Express application.
+    </p>
+    <ol class="spaced">
+      <li>
+        It should be a package following the conventions we established in the
+        previous homeworks.  Don't forget:
+        <ul>
+          <li>List all dependencies in <code>package.json</code></li>
+          <li>Your test command should be <code>mocha</code></li>
+          <li>Create a <code>test</code> directory and put your test cases
+            inside it</li>
+          <li>Test cases are recommended but not required</li>
+        </ul>
+      </li>
+      <li>
+        Your web application should listen to port 8000.  When run, it should
+        output the message, "Listening on port 8000...".
+      </li>
+      <li>Write a handler for the URL <code>/hello</code>
+        <ul>
+          <li>Create a plain-text response that says,
+            “Hello, <var>Name</var>”</li>
+          <li>The name should come from the <code>name</code> parameter in
+            the query string.  Use
+            the <a href="http://expressjs.com/en/4x/api.html#req.query"><code>req.query</code></a>
+            object to find the value of this property</li>
+          <li>If no name parameter is given then use “Somebody”
+            as the name</li>
+          <li>Don't forget to set the status to 200</li>
+        </ul>
+      </li>
+      <li>Write a handler for the URL <code>/picture</code>
+        <ul>
+          <li>Create a directory in your project
+            named <code>static</code></li>
+          <li>Store an image file in this directory</li>
+          <li>The handler should
+            use <a href="http://expressjs.com/en/4x/api.html#res.sendFile"><code>res.sendFile</code></a>
+            to send the image file as the response to the request.
+          </li>
+          <li>Don't forget to set the status to 200</li>
+        </ul>
+      </li>
+      <li>Write a default handler
+        <ul>
+          <li>Should be registered last: to be called if no other handler has
+            handled the request</li>
+          <li>Should have a 404 status code</li>
+          <li>Respond with a web page that says the following:
+            <pre class="example">The requested URL /whatever was not found on this server.</pre>
+            Replace <code>/whatever</code> with the actual URL requested
+          </li>
+          <li>
+            You will need to construct the HTML as a giant string in your
+            handler so that you can customize it with the URL.
+          </li>
+          <li>
+            Remember to set the content type to <code>text/html</code>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  
+
+</body></html>
