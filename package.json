@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShepherdJerred-homework/express-demo.git"
+    "url": "git+https://github.com/ShepherdJerred-homework/express-practice.git"
   },
   "author": "Jerred Shepherd",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ShepherdJerred-homework/express-demo/issues"
+    "url": "https://github.com/ShepherdJerred-homework/express-practice/issues"
   },
-  "homepage": "https://github.com/ShepherdJerred-homework/express-demo#readme",
+  "homepage": "https://github.com/ShepherdJerred-homework/express-practice#readme",
   "dependencies": {
     "express": "^4.16.2"
   },
